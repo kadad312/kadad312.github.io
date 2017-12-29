@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background-image: url("./resources/images/the-flatiron-building.png");
+  background-image: url("/resources/images/the-flatiron-building.png");
   background-size: cover;
   color: white;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .divider {
-  background-image: url("./resources/images/the-flatiron-building.png");
+  background-image: url("/resources/images/the-flatiron-building.png");
   font-size: 23px;
   font-weight: bold;
   color: white;
