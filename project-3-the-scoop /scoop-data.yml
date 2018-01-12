@@ -1,0 +1,56 @@
+users:
+  khaled:
+    username: khaled
+    articleIds:
+      - 1
+    commentIds:
+      - 2
+  dummyVar:
+    username: dummyVar
+    articleIds:
+      - 2
+    commentIds:
+      - 3
+articles:
+  '1':
+    id: 1
+    title: 2nd Article
+    url: www.anotherone.com
+    username: khaled
+    commentIds:
+      - 2
+      - 3
+    upvotedBy: []
+    downvotedBy:
+      - dummyVar
+    comments:
+      - &ref_0
+        id: 2
+        body: 2nd comment
+        username: khaled
+        articleId: 1
+        upvotedBy:
+          - khaled
+        downvotedBy:
+          - dummyVar
+  '2':
+    id: 2
+    title: Last Test B4 GitHub Repo
+    url: 'http://www.github.com'
+    username: dummyVar
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+nextArticleId: 3
+comments:
+  '1': null
+  '2': *ref_0
+  '3':
+    id: 3
+    body: Verifying edit!
+    username: dummyVar
+    articleId: 1
+    upvotedBy:
+      - dummyVar
+    downvotedBy: []
+nextCommentId: 4
