@@ -11,6 +11,11 @@ users:
       - 2
     commentIds:
       - 3
+  walter:
+    username: walter
+    articleIds:
+      - 3
+    commentIds: []
 articles:
   '1':
     id: 1
@@ -23,6 +28,7 @@ articles:
     upvotedBy: []
     downvotedBy:
       - dummyVar
+      - walter
     comments:
       - &ref_0
         id: 2
@@ -40,8 +46,18 @@ articles:
     username: dummyVar
     commentIds: []
     upvotedBy: []
+    downvotedBy:
+      - walter
+  '3':
+    id: 3
+    title: I thought this was so cool
+    url: 'http://www.gdnonline.com/'
+    username: walter
+    commentIds: []
+    upvotedBy:
+      - walter
     downvotedBy: []
-nextArticleId: 3
+nextArticleId: 4
 comments:
   '1': null
   '2': *ref_0
